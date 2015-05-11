@@ -1,0 +1,688 @@
+/*
+ Theme Name: Show Dreams
+ Theme URI: http://avotz.com
+ Author: Alonso
+ Description: Theme para Show Dreams
+ Version: 1.0
+*/
+@import "nib"
+@import "normalize.styl"
+@import "icons.styl"
+
+
+verde = #58B84A
+amarillo = #FEF16E
+azul = #2F358E
+gris = #e1e9ec
+
+
+*
+	box-sizing border-box
+
+body
+	font-family: 'Oxygen', sans-serif;
+	font-size 80%
+	font-weight 400
+	line-height 30px
+	color #707070
+
+
+ul
+	margin 0
+	padding 0
+	
+
+a
+	text-decoration none
+
+h1
+h2
+h3
+h4
+h5
+	font-weight 400
+	margin-top 0
+	font-family 'oswaldlight', sans-serif
+	letter-spacing 2px
+h1
+	line-height 45px
+
+img
+	max-width 100%
+	height auto
+
+.right
+	right 0
+.left
+	left 0
+.txt-center
+	text-align center
+
+.inner
+	max-width 896px
+	margin 0 auto
+	position relative
+	padding-left 1.2rem
+	padding-right 1.2rem
+
+.top 
+	background linear-gradient(to right, rgba(254,241,110,1) 1%,rgba(224,217,92,1) 29%,rgba(88,184,74,1) 73%,rgba(47,53,142,1) 100%); /* W3C */
+	height 60px
+	width 100%
+
+	&__btn-menu
+		position absolute
+		right 0
+		top 0
+		font-size 2rem
+		background transparent
+		border 0
+		outline 0
+		color #FFF
+		line-height 60px
+		
+	&__menu
+		display none
+		text-align center
+		background-color azul
+		position absolute
+		left 0
+		right 0
+		top 60px
+		z-index: 100
+		&__item
+		.menu-item	
+			display block
+			position relative
+		
+		&__link
+		a 	
+			display block
+			padding .5rem
+			color white
+			text-transform uppercase
+			font-family 'oswaldlight', sans-serif
+			letter-spacing 2px
+		
+	&__social
+		position absolute
+		left 0
+		&__link
+			color #262626
+			font-size 1.5rem
+			padding 0 .5rem
+			line-height 60px
+			
+			&:hover
+				color azul
+				
+@media screen and (min-width: 1024px)
+	.top
+		height 36px
+		&__menu 
+			display block
+			background-color transparent
+			position static
+			float left
+			line-height 36px
+			&__item
+			.menu-item	 
+				display inline-block
+				
+				
+			&__link
+			a	 
+				padding 0 .5rem
+				//text-shadow 1px 1px 2px rgba(0, 0, 0, .75)
+				&:hover
+					color azul
+					text-shadow 0 0 0
+			.sub-menu
+				z-index 9999
+				display none
+				position absolute
+				width 200px
+				background-color verde
+				.menu-item
+					display block
+					padding .5rem 0
+					border-bottom 1px solid #4B905F
+		&__social
+			right 0
+			left auto
+			&__link 
+				line-height 36px
+				color white
+		&__btn-menu
+			display none
+			
+.header
+	background-color transparent
+	text-align center
+	padding-top 2rem
+	padding-bottom 4rem
+	position absolute //relative
+	z-index 1
+	left 0
+	right 0
+	&__logo
+		display inline-block
+		width 250px
+		padding .5rem
+		border-radius 10px
+		background-color rgba(255, 255, 255, .9)	
+.main 
+			
+	&__banner
+		position relative //absolute
+		top 0 //60px
+		z-index 0
+		text-align center
+		width 100%
+		&__slide
+			width 100%
+			background-size cover
+			background-repeat no-repeat
+			background-position center center
+			height 450px
+			
+			&__info
+				padding-top 12rem
+				position relative
+				
+				h1
+					
+					color white
+					
+					text-transform uppercase
+					font-size 1rem
+					margin-bottom .5rem
+					
+					span
+						padding .5rem 
+						background url('img/front-h1-back.png')
+						display inline-block
+						margin-top 10px
+						
+						&:first-child
+							margin-top 0
+				a 
+					background-color white
+					padding .3rem
+					font-size 1.5rem
+					text-transform uppercase
+					color verde
+					display block
+					span
+						padding .5rem 
+						border 4px solid verde
+						display block
+					&:hover
+						span
+							border-color white
+	&__page-banner
+		height 450px
+		background-repeat no-repeat
+		background-position center center
+		background-size cover
+		width 100%
+		text-align center
+		position: relative;
+		top: 0 //60px;
+		z-index: 0;
+		text-align: center;
+					
+	&__featured
+		margin-top 10px //220px
+		margin-bottom 130px
+		background-color #58B84A
+		position relative
+		text-align center
+		padding 60px 0 30px 0
+		&:before
+			background: url('img/topline.png') center center repeat-x;
+			content: '';
+			text-indent: -9999px;
+			position: absolute;
+			left: 0;
+			top: -86px;
+			height: 86px;
+			width: 100%;
+		&:after
+			background: url('img/bottomline.png') center center repeat-x;
+			content: '';
+			text-indent: -9999px;
+			position: absolute;
+			left: 0;
+			bottom: -86px;
+			height: 86px;
+			width: 100%;			
+						
+		&__title
+			position relative
+			text-transform uppercase
+			color white
+			margin-bottom 90px
+			&:after
+				content ''
+				position absolute
+				border-top 1px dotted white
+				border-bottom 1px dotted white
+				bottom -30px
+				left 0
+				right 0
+				height 3px 
+				width 95px
+				color white
+				margin 0 auto
+				text-align center
+		&__item
+			display inline-block
+			margin-right 1rem
+			margin-bottom 3rem
+			width 100%
+			height 82px
+			position relative
+			text-align left
+			&:last-child
+				margin-right 0
+			
+			&__link 
+				color white
+			&__img
+				display inline-block
+				vertical-align top
+				&:before
+					font-family: 'showdreams'
+					color rgba(0, 0, 0, 1)
+					font-size 5rem
+					
+			&.decorative-lighting
+				.main__featured__item__text
+					left 30px
+				.main__featured__item__img
+					&:before
+						content '\f0eb'
+			&.dj-music-services
+				.main__featured__item__img
+					&:before
+						content '\f025'
+			&.audiovisual-service
+				.main__featured__item__img
+					&:before
+						content '\f008'
+						font-size 4rem
+					
+			&__text
+				position absolute
+				top -30px
+				left 55px
+				text-transform uppercase
+				font-size 1rem
+				width 140px
+				
+						
+	&__services
+		text-align center
+		margin-bottom 3rem
+		&__title
+			position relative
+			text-transform uppercase
+			color verde
+			margin-bottom 70px
+				
+			&:after
+				content ''
+				position absolute
+				border-top 1px dotted verde
+				border-bottom 1px dotted verde
+				bottom -30px
+				left 0
+				right 0
+				height 3px 
+				width 95px
+				color verde
+				margin 0 auto
+				text-align center
+		&__container
+			margin-top 2rem
+			text-align center
+			
+		&__item
+			display inline-block
+			width 256px
+			height 330px
+			margin-bottom 1rem
+			border 1px solid rgba(88, 184, 74, .35)
+			&__figure
+				overflow hidden
+			
+			&__link
+				display block
+				&:hover
+					img 
+						transform scale(1.4, 1.4) rotate(9deg)
+						
+			&__img
+				transition all .5s ease		
+			&__title
+				text-transform uppercase
+				font-size 1.5rem
+				margin-top 1rem
+				margin-bottom 2.5rem
+				padding 0 1rem
+				position relative
+				color verde
+				a 
+					color verde		
+				&:after
+					content ''
+					position absolute
+					border-top 1px dotted verde
+					border-bottom 1px dotted verde
+					bottom -20px
+					left 0
+					right 0
+					height 3px 
+					width 95px
+					color verde
+					margin 0 auto
+					text-align center
+			&__description
+				padding 0 1rem
+				line-height 20px
+	&__content
+		//margin-top 60px
+		margin-bottom 130px
+		position relative
+		text-align center
+		padding 60px 0 30px 0
+		
+		&__title
+			text-transform uppercase
+			position relative
+			text-align center
+			&:after
+				content ''
+				position absolute
+				border-top 1px dotted verde
+				border-bottom 1px dotted verde
+				bottom -10px
+				left 0
+				right 0
+				height 3px 
+				width 95px
+				color verde
+				margin 0 auto
+				text-align center
+		.contact-form
+			text-align center
+			input[type="text"]
+			input[type="email"]
+				height 30px
+				
+			input[type="submit"]
+				background-color white
+				padding .3rem
+				font-size 1.5rem
+				text-transform uppercase
+				color verde
+				display inline-block
+				border 2px solid verde
+				&:hover
+					background-color verde 
+					color white
+	//gallery
+
+	.services-gallery
+		//height: 100%;
+		width: 100%;
+		min-height: 400px;
+		//min-width: 900px;
+		padding-top: 1px;
+		position relative
+		left 0
+		right 0
+	 
+	#slider-gallery
+		margin: 10px 0 0 0;
+		height: 400px;
+		overflow: hidden;
+		background: url(../img/ajax-loader.gif) center center no-repeat;
+
+	 
+		.slide 
+			position: relative;
+			display: none;
+			height: 400px;
+			float: left;
+			background-position: center right;
+			//background-repeat no-repeat
+			//background-size: 100%,100%
+			cursor: pointer;
+			border-left: 1px solid #fff;
+
+	 
+			&:first-child 
+				border: none;
+		
+	 
+			&.active 
+				cursor: default;
+
+	 
+		.slide-block
+			position: absolute;
+			left: 40px;
+			bottom: 75px;
+			display: inline-block;
+			width: 435px;
+			background-color: #fff;
+			background-color: rgba(255,255,255, 0.8);	
+			padding: 20px;
+			font-size: 14px;
+			color: #134B94;
+			border: 1px solid #fff;
+			overflow: hidden;
+			border-radius: 4px;
+
+	 
+			h4 
+				font-size: 36px;
+				font-weight: bold;
+				margin: 0 0 10px 0;
+				line-height: 1;
+
+			p
+				margin: 0;
+		
+@media screen and (min-width: 640px)
+	body
+		font-size 100%
+	.main 
+		&__banner
+			&__slide
+				height 560px
+				&__info
+					h1
+						font-size 2rem
+						margin-bottom 2rem
+						span
+							padding 1rem
+					a 
+						//padding 1rem
+						font-size 2rem
+						span 
+							padding 1rem
+		&__featured
+			margin-top 0 //320px
+		
+						
+							
+@media screen and (min-width: 900px)
+	.main 
+		&__banner
+			&__slide
+				&__info
+					h1
+						font-size 2.6rem
+						letter-spacing 5px
+						span
+							padding 1rem							
+
+@media screen and (min-width: 1024px)
+	.top 
+		&__menu 
+			display block !important
+			
+	.main 
+		&__banner
+			//top 36px
+			&__slide
+				height 750px
+				&__info
+					padding-top 16rem
+					h1
+						margin-bottom 4rem
+						span
+							margin-bottom 1rem
+		&__featured
+			//margin-top 470px
+			&__title
+				margin-bottom 100px
+			&__item
+				width 25%
+				margin-right 5rem
+				
+		&__services
+			&__container
+				display flex
+				flex-wrap wrap 
+				justify-content space-between
+		&__content
+			//margin-top 60px
+			text-align left
+				
+		
+	  									
+
+.footer
+	background-color #262626
+	padding-top 2rem
+	text-align center
+	&__contact
+		color white
+		margin-bottom 1rem
+		&__item
+			margin-bottom 1rem
+			font-size 1.5rem
+			span
+				font-size 1rem
+				color #707070
+			&--mail
+				a
+					color verde
+					font-size 1rem
+					&:hover
+						text-decoration underline
+	&__logo
+		width 130px
+		display block
+		margin 0 auto 1rem auto
+	&__menu 
+		display none
+		text-align right
+		margin 1.5rem 0
+		&__item
+		.menu-item	
+			display inline-block
+		&__link
+		a	
+			display block
+			color #707070
+			padding .5rem
+			&:hover
+				color white
+		.sub-menu
+			display none
+	
+	&__social
+		
+		h4
+			text-align center
+		&__item
+			display inline-block
+				
+		&__link
+			display block
+			color verde
+			&:hover
+				color white
+			i
+				display inline-block
+				width 40px
+				height 40px
+				font-size 1.3rem
+				background-color #000
+				color white
+				border-radius 50%
+				padding   .5em
+				margin-right .5rem
+			
+		&__info
+			display none
+	&__copyright
+		margin-top .5rem
+		overflow hidden
+		clear both
+		background-color #000
+		font-size .7rem		
+		&__show
+			float left
+		&__avotz
+			float right
+			a 
+				color verde
+			i 
+				font-size 2rem
+				display inline-block
+				vertical-align middle
+@media screen and (min-width: 1024px)
+	.footer
+		overflow hidden
+		text-align left
+		&__contact
+			float left
+			width 256px
+		&__logo
+			margin 0 0 1rem 0
+		&__info
+			float right
+			width 556px
+		&__menu
+			display block
+		&__social
+			float right
+			text-align right
+			margin-top 2rem
+			//width 400px
+			&__item
+				margin-bottom 1rem
+				margin-right 1rem
+				&:last-child
+					margin-right 0
+				i 
+					text-align center
+			
+				
+			&__info
+				display inline-block
+		
+			
+			
+		
+		
+		
+					
+
+
