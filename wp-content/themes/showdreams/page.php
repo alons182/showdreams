@@ -29,5 +29,5 @@
 	  	?>
 	  	
 	</main>
-
+ <?php get_sidebar('contact'); ?>
 <?php get_footer(); ?>
