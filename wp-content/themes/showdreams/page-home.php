@@ -26,7 +26,7 @@
             
             <section class="main__featured">
                 <div class="inner">
-                        <h1 class="main__featured__title">Our company has three main services:</h1>
+                        <h1 class="main__featured__title">Our main services</h1>
                     
                         <?php
                             $args = array(
