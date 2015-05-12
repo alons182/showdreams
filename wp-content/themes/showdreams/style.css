@@ -731,7 +731,7 @@ img {
     display: none;
     position: absolute;
     width: 200px;
-    background-color: #58b84a;
+    background-color: #f00;
   }
   .top__menu .sub-menu .menu-item {
     display: block;
@@ -808,12 +808,12 @@ img {
   padding: 0.3rem;
   font-size: 1.5rem;
   text-transform: uppercase;
-  color: #58b84a;
+  color: #f00;
   display: block;
 }
 .main__banner__slide__info a span {
   padding: 0.5rem;
-  border: 4px solid #58b84a;
+  border: 4px solid #f00;
   display: block;
 }
 .main__banner__slide__info a:hover span {
@@ -933,20 +933,20 @@ img {
 .main__services__title {
   position: relative;
   text-transform: uppercase;
-  color: #58b84a;
+  color: #f00;
   margin-bottom: 70px;
 }
 .main__services__title:after {
   content: '';
   position: absolute;
-  border-top: 1px dotted #58b84a;
-  border-bottom: 1px dotted #58b84a;
+  border-top: 1px dotted #f00;
+  border-bottom: 1px dotted #f00;
   bottom: -30px;
   left: 0;
   right: 0;
   height: 3px;
   width: 95px;
-  color: #58b84a;
+  color: #f00;
   margin: 0 auto;
   text-align: center;
 }
@@ -988,22 +988,22 @@ img {
   margin-bottom: 2.5rem;
   padding: 0 1rem;
   position: relative;
-  color: #58b84a;
+  color: #f00;
 }
 .main__services__item__title a {
-  color: #58b84a;
+  color: #f00;
 }
 .main__services__item__title:after {
   content: '';
   position: absolute;
-  border-top: 1px dotted #58b84a;
-  border-bottom: 1px dotted #58b84a;
+  border-top: 1px dotted #f00;
+  border-bottom: 1px dotted #f00;
   bottom: -20px;
   left: 0;
   right: 0;
   height: 3px;
   width: 95px;
-  color: #58b84a;
+  color: #f00;
   margin: 0 auto;
   text-align: center;
 }
@@ -1025,14 +1025,14 @@ img {
 .main__content__title:after {
   content: '';
   position: absolute;
-  border-top: 1px dotted #58b84a;
-  border-bottom: 1px dotted #58b84a;
+  border-top: 1px dotted #f00;
+  border-bottom: 1px dotted #f00;
   bottom: -10px;
   left: 0;
   right: 0;
   height: 3px;
   width: 95px;
-  color: #58b84a;
+  color: #f00;
   margin: 0 auto;
   text-align: center;
 }
@@ -1048,12 +1048,12 @@ img {
   padding: 0.3rem;
   font-size: 1.5rem;
   text-transform: uppercase;
-  color: #58b84a;
+  color: #f00;
   display: inline-block;
-  border: 2px solid #58b84a;
+  border: 2px solid #f00;
 }
 .main__content .contact-form input[type="submit"]:hover {
-  background-color: #58b84a;
+  background-color: #f00;
   color: #fff;
 }
 .main .services-gallery {
@@ -1208,7 +1208,7 @@ img {
   color: #707070;
 }
 .footer__contact__item--mail a {
-  color: #58b84a;
+  color: #f00;
   font-size: 1rem;
 }
 .footer__contact__item--mail a:hover {
@@ -1249,7 +1249,7 @@ img {
 }
 .footer__social__link {
   display: block;
-  color: #58b84a;
+  color: #f00;
 }
 .footer__social__link:hover {
   color: #fff;
@@ -1283,7 +1283,7 @@ img {
   float: right;
 }
 .footer__copyright__avotz a {
-  color: #58b84a;
+  color: #f00;
 }
 .footer__copyright__avotz i {
   font-size: 2rem;
