@@ -10,10 +10,11 @@
 		</div>
 		<div class="mini-contact__form__container">
 			<form action="<?php echo home_url( '/helpers/contact.php' ); ?>" data-remote data-remote-success-message="Message Sent">
-				<textarea name="mini-comments" id="mini-comments" cols="30" rows="10"></textarea>
-				<input type="email" name="mini-email" id="mini-email" />
+				<textarea name="mini-comments" id="mini-comments" cols="30" rows="10" required></textarea>
+				<input type="email" name="mini-email" id="mini-email" required />
 				<input type="submit" class="mini-btn" value="Send">
 			</form>
+			<span class="response"></span>
 		</div>
 		
 	</div>

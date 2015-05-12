@@ -1261,6 +1261,15 @@ img {
   padding: 0.5rem;
   margin-bottom: 1rem;
 }
+.mini-contact__form .response {
+  font-weight: bold;
+}
+.mini-contact__form .response.message-success {
+  color: #58b84a;
+}
+.mini-contact__form .response.message-error {
+  color: #f00;
+}
 .mini-contact__form__container {
   padding: 1rem;
 }
