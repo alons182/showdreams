@@ -1213,6 +1213,9 @@ img {
   padding-top: 2rem;
   text-align: center;
 }
+.footer .fb-page {
+  float: right;
+}
 .footer__contact {
   color: #fff;
   margin-bottom: 1rem;
