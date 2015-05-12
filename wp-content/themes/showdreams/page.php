@@ -15,10 +15,14 @@
 	  		<div class="inner">
 		
 				<?php get_template_part( 'templates/loop' ); ?>
-				
+				<?php if ( $post->ID == 12 ) //contact
+			  		{
+			  			get_template_part('templates/social'); 
+					}
+			  	?>
 			</div>
 	  	</section>
-	  	<?php if ( $post->ID != 59 )
+	  	<?php if ( $post->ID != 59 ) //gallery
 	  		{
 	  			get_sidebar('testimonials'); 
 			}

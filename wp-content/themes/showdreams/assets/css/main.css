@@ -881,7 +881,7 @@ img {
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 90px;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .main__featured__title:after {
   content: '';
@@ -904,22 +904,13 @@ img {
   width: 100%;
   height: 82px;
   position: relative;
-  text-align: left;
+  text-align: center;
 }
 .main__featured__item:last-child {
   margin-right: 0;
 }
 .main__featured__item__link {
   color: #fff;
-}
-.main__featured__item__link:hover .main__featured__item__img:before {
-  color: #fef16e;
-  position: absolute;
-  -webkit-transform: scale(1.2, 1.2);
-  -moz-transform: scale(1.2, 1.2);
-  -o-transform: scale(1.2, 1.2);
-  -ms-transform: scale(1.2, 1.2);
-  transform: scale(1.2, 1.2);
 }
 .main__featured__item__img {
   display: inline-block;
@@ -949,12 +940,12 @@ img {
   font-size: 4rem;
 }
 .main__featured__item__text {
-  position: absolute;
+  position: static;
   top: -30px;
   left: 55px;
   text-transform: uppercase;
-  font-size: 1.5rem;
-  width: 140px;
+  font-size: 1rem;
+  width: auto;
 }
 .main__services {
   text-align: center;
@@ -1067,7 +1058,7 @@ img {
   text-align: center;
 }
 .main__content .contact-form {
-  text-align: center;
+  position: relative;
 }
 .main__content .contact-form input[type="text"],
 .main__content .contact-form input[type="email"] {
@@ -1085,6 +1076,26 @@ img {
 .main__content .contact-form input[type="submit"]:hover {
   background-color: #58b84a;
   color: #fff;
+}
+.main__content .contact__social__item {
+  display: inline-block;
+  margin: 0.2rem;
+}
+.main__content .contact__social__item:first-child .contact__social__link {
+  padding: 0.8rem 1rem;
+}
+.main__content .contact__social__link {
+  display: block;
+  background-color: #2f358e;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 0;
+  padding: 0.8rem;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.main__content .contact__social__link:hover {
+  background-color: #58b84a;
 }
 .main .testimonials {
   margin-top: 10px;
@@ -1177,11 +1188,13 @@ img {
   right: 0;
   top: 50%;
   overflow: visible;
+  z-index: 999;
+  display: none;
 }
 .mini-contact__btn {
   background-color: #2f358e;
   color: #fff;
-  padding: 0.3rem 0.5rem;
+  padding: 0.3rem 1rem;
   font-weight: bold;
   display: block;
   position: relative;
@@ -1191,9 +1204,11 @@ img {
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
   cursor: pointer;
+  -webkit-border-radius: 0 30px 0 0;
+  border-radius: 0 30px 0 0;
 /*width 33px
 		height 300px*/
-  right: -96px;
+  right: -105px;
   top: 0;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -1206,6 +1221,10 @@ img {
 }
 .mini-contact__btn i {
   margin-right: 0.5rem;
+  display: inline-block;
+}
+.mini-contact__btn span {
+  display: inline-block;
 }
 .mini-contact__btn.open {
   opacity: 0;
@@ -1218,7 +1237,7 @@ img {
   filter: alpha(opacity=0);
   position: fixed;
   bottom: 0;
-  right: 1%;
+  right: 3%;
   background-color: #fff;
   width: 250px;
   border: 5px solid #2f358e;
@@ -1295,6 +1314,23 @@ img {
   .main__featured {
     margin-top: 0;
   }
+  .main__featured__item {
+    width: 25%;
+    text-align: left;
+  }
+  .main__featured__item__link:hover .main__featured__item__img:before {
+    color: #fef16e;
+    position: absolute;
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+  }
+  .main__featured__item__text {
+    position: absolute;
+    width: 140px;
+  }
 }
 @media screen and (min-width: 900px) {
   .main__banner__slide__info h1 {
@@ -1323,10 +1359,13 @@ img {
   }
   .main__featured__title {
     margin-bottom: 100px;
+    font-size: 3rem;
   }
   .main__featured__item {
-    width: 25%;
     margin-right: 5rem;
+  }
+  .main__featured__item__text {
+    font-size: 1.5rem;
   }
   .main__services__container {
     display: -webkit-box;
@@ -1350,6 +1389,20 @@ img {
   }
   .main__content {
     text-align: left;
+  }
+  .main__content .contact-info {
+    position: absolute;
+    right: 3rem;
+    top: 5rem;
+  }
+  .main__content .contact__social,
+  .main__content .share {
+    position: absolute;
+    bottom: 12rem;
+    right: 4.5rem;
+  }
+  .mini-contact {
+    display: block;
   }
 }
 .footer {

@@ -265,7 +265,7 @@ img
 			text-transform uppercase
 			color white
 			margin-bottom 90px
-			font-size 3rem
+			font-size 2rem
 			&:after
 				content ''
 				position absolute
@@ -286,18 +286,13 @@ img
 			width 100%
 			height 82px
 			position relative
-			text-align left
+			text-align center
 			&:last-child
 				margin-right 0
 			
 			&__link 
 				color white
-				&:hover
-					.main__featured__item__img
-						&:before
-							color amarillo
-							position absolute
-							transform scale(1.2,1.2) 					
+									
 			&__img
 				display inline-block
 				vertical-align top
@@ -324,12 +319,12 @@ img
 						font-size 4rem
 					
 			&__text
-				position absolute
+				position static
 				top -30px
 				left 55px
 				text-transform uppercase
-				font-size 1.5rem
-				width 140px
+				font-size 1rem
+				width auto
 				//font-weight bold
 				
 						
@@ -409,6 +404,7 @@ img
 		text-align center
 		padding 60px 0 30px 0
 		
+		
 		&__title
 			text-transform uppercase
 			position relative
@@ -427,7 +423,7 @@ img
 				margin 0 auto
 				text-align center
 		.contact-form
-			text-align center
+			position relative
 			input[type="text"]
 			input[type="email"]
 				height 30px
@@ -443,6 +439,23 @@ img
 				&:hover
 					background-color verde 
 					color white
+		.contact__social
+			&__item 
+				display inline-block
+				margin .2rem
+				&:first-child
+					.contact__social__link
+						padding .8rem 1rem	
+			&__link
+				display block
+				background-color azul
+				color white
+				font-size 1.5rem
+				line-height 0
+				padding .8rem
+				border-radius 50%
+				&:hover
+					background-color verde
 	
 	.testimonials
 		margin-top 10px //220px
@@ -545,25 +558,31 @@ img
 	right 0
 	top 50%
 	overflow visible
+	z-index 999
+	display none
 	
 	&__btn 
 		background-color azul
 		color white
-		padding .3rem .5rem
+		padding .3rem 1rem
 		font-weight bold
 		display block
 		position relative
 		transform rotate(270deg)
 		cursor pointer
+		border-radius 0 30px 0 0
 		/*width 33px
 		height 300px*/
-		right -96px
+		right -105px
 		top 0
 		transition all .5s ease
 		opacity 1
 		
 		i 
 			margin-right .5rem
+			display inline-block
+		span 
+			display inline-block
 		&.open
 			opacity 0
 			
@@ -572,10 +591,11 @@ img
 		opacity 0
 		position fixed
 		bottom 0
-		right 1%
+		right 3%
 		background-color white
 		width 250px
 		border 5px solid azul
+		
 		
 		input[type="text"]
 		input[type="email"]
@@ -637,6 +657,21 @@ img
 							padding 1rem
 		&__featured
 			margin-top 0 //320px
+			&__item 
+				width 25%
+				text-align left
+						
+				&__link
+					&:hover
+						.main__featured__item__img
+							&:before
+								color amarillo
+								position absolute
+								transform scale(1.2,1.2) 
+				&__text
+					position absolute
+					width 140px
+					//font-weight bold
 		
 						
 							
@@ -671,9 +706,12 @@ img
 			//margin-top 470px
 			&__title
 				margin-bottom 100px
+				font-size 3rem
 			&__item
-				width 25%
 				margin-right 5rem
+				&__text
+					font-size 1.5rem
+					
 				
 		&__services
 			&__container
@@ -683,7 +721,20 @@ img
 		&__content
 			//margin-top 60px
 			text-align left
-				
+			
+			.contact-info
+				position absolute
+				right 3rem
+				top 5rem
+			.contact__social
+			.share
+				position absolute
+				bottom 12rem 
+				right 4.5rem
+			
+					
+	.mini-contact
+		display block			
 		
 	  									
 
