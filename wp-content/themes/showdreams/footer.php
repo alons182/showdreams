@@ -3,11 +3,11 @@
                 <div class="footer__contact">
                     <a href="<?php echo home_url( '/' ); ?>" class="footer__logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-white.png" alt="Show Dreams" class="footer__logo__img" /></a>
                     <div class="footer__contact__item footer__contact__item--tel">
-                        8 812 425-01-99 <br/>
+                         8480-68-65 <br/>
                         <span>Lorem ipsum dolor sit amet</span>
                     </div>
                     <div class="footer__contact__item footer__contact__item--tel">
-                        8 911 009-00-50 <br/>
+                        8824-37-03 <br/>
                         <span>Lorem ipsum dolor sit amet</span>
                     </div>
                     <div class="footer__contact__item footer__contact__item--mail">

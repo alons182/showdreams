@@ -12,8 +12,8 @@
                     <div class="main__banner__slide" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner.jpg');">
                         <div class="inner">
                             <div class="main__banner__slide__info">
-                                <h1><span>Lorem ipsum dolor sit amet</span>
-                                <span>consectetur adipisicing</span></h1>
+                                <h1><span>We take your event…</span>
+                                <span>to the next level !!</span></h1>
                                 <a href="<?php echo home_url( '/contact-us' ); ?>" class="btn"><span>Contact Us</span></a>
                             </div>
                             

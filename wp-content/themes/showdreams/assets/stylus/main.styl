@@ -218,8 +218,10 @@ img
 						border 4px solid verde
 						display block
 					&:hover
-						span
-							border-color white
+						background-color verde
+						color white
+						/*span
+							border-color white*/
 	&__page-banner
 		height 450px
 		background-repeat no-repeat
@@ -289,6 +291,12 @@ img
 			
 			&__link 
 				color white
+				&:hover
+					.main__featured__item__img
+						&:before
+							color #EFE565
+							position absolute
+							transform scale(1.2,1.2) 					
 			&__img
 				display inline-block
 				vertical-align top
@@ -296,6 +304,7 @@ img
 					font-family: 'showdreams'
 					color rgba(0, 0, 0, 1)
 					font-size 5rem
+					transition all .5s ease
 					
 			&.decorative-lighting
 				.main__featured__item__text

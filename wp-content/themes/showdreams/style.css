@@ -816,8 +816,11 @@ img {
   border: 4px solid #58b84a;
   display: block;
 }
-.main__banner__slide__info a:hover span {
-  border-color: #fff;
+.main__banner__slide__info a:hover {
+  background-color: #58b84a;
+  color: #fff;
+/*span
+							border-color white*/
 }
 .main__page-banner {
   height: 450px;
@@ -896,6 +899,15 @@ img {
 .main__featured__item__link {
   color: #fff;
 }
+.main__featured__item__link:hover .main__featured__item__img:before {
+  color: #efe565;
+  position: absolute;
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
 .main__featured__item__img {
   display: inline-block;
   vertical-align: top;
@@ -904,6 +916,11 @@ img {
   font-family: 'showdreams';
   color: #000;
   font-size: 5rem;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .main__featured__item.decorative-lighting .main__featured__item__text {
   left: 30px;
