@@ -335,7 +335,7 @@ img
 						
 	&__services
 		text-align center
-		margin-bottom 3rem
+		margin-bottom 6rem
 		&__title
 			position relative
 			text-transform uppercase
@@ -443,6 +443,39 @@ img
 				&:hover
 					background-color verde 
 					color white
+	
+	.testimonials
+		margin-top 10px //220px
+		margin-bottom 0
+		background-color #58B84A
+		//background linear-gradient(to bottom, #58B84A 0%, #262626 80%); /* W3C */
+		position relative
+		text-align center
+		padding 30px 0 70px 0
+		color white
+		
+		&__title
+			text-transform uppercase
+		&:before
+			background: url('img/topline.png') center center repeat-x;
+			content: '';
+			text-indent: -9999px;
+			position: absolute;
+			left: 0;
+			top: -86px;
+			height: 86px;
+			width: 100%;
+		.testimony
+			padding-left 1.2rem
+			padding-right 1.2rem
+			&__info
+				font-style italic
+			&__author
+				float right
+				
+			
+		
+
 	//gallery
 
 	.services-gallery
@@ -506,6 +539,83 @@ img
 
 			p
 				margin: 0;
+
+.mini-contact
+	position fixed
+	right 0
+	top 50%
+	overflow visible
+	
+	&__btn 
+		background-color azul
+		color white
+		padding .3rem .5rem
+		font-weight bold
+		display block
+		position relative
+		transform rotate(270deg)
+		cursor pointer
+		/*width 33px
+		height 300px*/
+		right -96px
+		top 0
+		transition all .5s ease
+		opacity 1
+		
+		i 
+			margin-right .5rem
+		&.open
+			opacity 0
+			
+	
+	&__form
+		opacity 0
+		position fixed
+		bottom 0
+		right 1%
+		background-color white
+		width 250px
+		border 5px solid azul
+		
+		input[type="text"]
+		input[type="email"]
+		textarea
+			width 100%
+			margin-bottom .5rem
+		textarea
+			height 100px
+			resize none
+		input[type="submit"]
+			background-color azul
+			color white
+			border 0
+			outline 0
+			float right
+			padding .5rem
+			margin-bottom 1rem
+		&__container
+			padding 1rem
+		&.open
+			opacity 1
+	&__header
+		background-color azul
+		color white
+		text-align center 
+		padding .5rem		
+	&__message 
+		line-height 25px
+		text-align center
+		padding .5rem
+	&__close
+		position absolute
+		left -35px
+		background-color verde
+		color white
+		padding .5rem
+		cursor pointer
+		display block
+		border-radius 50%		
+		
 		
 @media screen and (min-width: 640px)
 	body

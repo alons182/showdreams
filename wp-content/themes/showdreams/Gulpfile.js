@@ -53,7 +53,7 @@ gulp.task('stylus', function () {
 });
 
 gulp.task('css', function () {
-  gulp.src(['./assets/css/main.css','./assets/css/magnific-popup.css','./assets/css/chosen.css'])
+  gulp.src(['./assets/css/main.css','./assets/css/magnific-popup.css','./assets/css/chosen.css','./assets/css/animate.css'])
     //.pipe(minifyCSS({ keepSpecialComments: '*', keepBreaks: '*'}))
     .pipe(concat('style.css'))
     .pipe(gulp.dest('./'))

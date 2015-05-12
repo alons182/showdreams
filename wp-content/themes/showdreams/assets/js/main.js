@@ -106,6 +106,80 @@
   $('#slider-gallery').children().click(function() {
     $('#slider-gallery').trigger( 'slideTo', [this] );
   });
+
+  // mini-contact form
+  $('.mini-contact__btn').on('click', function (e) {
+      
+      $(this).addClass('open');
+      $('.mini-contact__form').removeClass('bounceOutDown').addClass('bounceInUp').addClass('open');;    
+  });
+  
+  $('.mini-contact__close').on('click', function (e) {
+      
+      $('.mini-contact__btn').removeClass('open');
+      $('.mini-contact__form').removeClass('bounceInUp').addClass('bounceOutDown');    
+  });
+
+   // Forms with ajax process
+    $('form[data-remote]').on('submit', function(e){
+        var form =$(this);
+        var method = form.find('input[name="_method"]').val() || 'POST';
+        var url = form.prop('action');
+        form.find('.loader').show();
+        $.ajax({
+            type: method,
+            url: url,
+            data: form.serialize(),
+            success: function(){
+                var message = form.data('remote-success-message');
+                form.find('.loader').hide();
+                if(message)
+                {
+
+                    $('.message').removeClass('message-error').addClass('message-success').html(message).fadeIn(300).delay(4500).fadeOut(300);
+                }
+            },
+            error:function(){
+                form.find('.loader').hide();
+                $('.message').removeClass('message-success').addClass('message-error').html('Whoops, looks like something went wrong.').fadeIn(300).delay(4500).fadeOut(300);
+
+            }
+        });
+
+        limpiaForm(form);
+
+        e.preventDefault();
+    });
+
+    $('input[data-confirm], button[data-confirm]').on('click', function(e){
+       var input = $(this);
+
+        input.prop('disabled','disabled');
+
+        if(! confirm(input.data('confirm'))){
+            e.preventDefault();
+        }
+    });
+
+    function limpiaForm(miForm) {
+
+        // recorremos todos los campos que tiene el formulario
+        $(":input", miForm).each(function() {
+            var type = this.type;
+            var tag = this.tagName.toLowerCase();
+            //limpiamos los valores de los campos…
+            if (type == 'text' || type == 'password'  || type == 'email' || tag == 'textarea')
+                this.value = "";
+            // excepto de los checkboxes y radios, le quitamos el checked
+            // pero su valor no debe ser cambiado
+            else if (type == 'checkbox' || type == 'radio')
+                this.checked = false;
+            // los selects le ponesmos el indice a -
+            else if (tag == 'select')
+                this.selectedIndex = -1;
+        });
+    }
+
  
 
 

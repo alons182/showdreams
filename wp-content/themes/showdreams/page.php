@@ -18,6 +18,11 @@
 				
 			</div>
 	  	</section>
+	  	<?php if ( $post->ID != 59 )
+	  		{
+	  			get_sidebar('testimonials'); 
+			}
+	  	?>
 	  	
 	</main>
 

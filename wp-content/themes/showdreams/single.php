@@ -19,6 +19,7 @@
 				
 			</div>
 	  	</section>
+	  	<?php get_sidebar('testimonials'); ?>
 	</main>
 
 <?php get_footer(); ?>

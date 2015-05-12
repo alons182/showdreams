@@ -503,8 +503,8 @@ table {
 }
 @font-face {
   font-family: 'showdreams';
-  src: url("fonts/showdreams.eot?l3q403");
-  src: url("fonts/showdreams.eot?#iefixl3q403") format('embedded-opentype'), url("fonts/showdreams.woff?l3q403") format('woff'), url("fonts/showdreams.ttf?l3q403") format('truetype'), url("fonts/showdreams.svg?l3q403#showdreams") format('svg');
+  src: url("fonts/showdreams.eot?-6s2hhk");
+  src: url("fonts/showdreams.eot?#iefix-6s2hhk") format('embedded-opentype'), url("fonts/showdreams.woff?-6s2hhk") format('woff'), url("fonts/showdreams.ttf?-6s2hhk") format('truetype'), url("fonts/showdreams.svg?-6s2hhk#showdreams") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -526,6 +526,15 @@ table {
 }
 .icon-film:before {
   content: "\f008";
+}
+.icon-close:before {
+  content: "\f00d";
+}
+.icon-remove:before {
+  content: "\f00d";
+}
+.icon-times:before {
+  content: "\f00d";
 }
 .icon-headphones:before {
   content: "\f025";
@@ -559,6 +568,9 @@ table {
 }
 .icon-google-plus:before {
   content: "\f0d5";
+}
+.icon-envelope:before {
+  content: "\f0e0";
 }
 .icon-lightbulb-o:before {
   content: "\f0eb";
@@ -946,7 +958,7 @@ img {
 }
 .main__services {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 .main__services__title {
   position: relative;
@@ -1074,6 +1086,38 @@ img {
   background-color: #58b84a;
   color: #fff;
 }
+.main .testimonials {
+  margin-top: 10px;
+  margin-bottom: 0;
+  background-color: #58b84a;
+  position: relative;
+  text-align: center;
+  padding: 30px 0 70px 0;
+  color: #fff;
+}
+.main .testimonials__title {
+  text-transform: uppercase;
+}
+.main .testimonials:before {
+  background: url("img/topline.png") center center repeat-x;
+  content: '';
+  text-indent: -9999px;
+  position: absolute;
+  left: 0;
+  top: -86px;
+  height: 86px;
+  width: 100%;
+}
+.main .testimonials .testimony {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+.main .testimonials .testimony__info {
+  font-style: italic;
+}
+.main .testimonials .testimony__author {
+  float: right;
+}
 .main .services-gallery {
   width: 100%;
   min-height: 400px;
@@ -1127,6 +1171,106 @@ img {
 }
 .main #slider-gallery .slide-block p {
   margin: 0;
+}
+.mini-contact {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  overflow: visible;
+}
+.mini-contact__btn {
+  background-color: #2f358e;
+  color: #fff;
+  padding: 0.3rem 0.5rem;
+  font-weight: bold;
+  display: block;
+  position: relative;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  cursor: pointer;
+/*width 33px
+		height 300px*/
+  right: -96px;
+  top: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.mini-contact__btn i {
+  margin-right: 0.5rem;
+}
+.mini-contact__btn.open {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.mini-contact__form {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  position: fixed;
+  bottom: 0;
+  right: 1%;
+  background-color: #fff;
+  width: 250px;
+  border: 5px solid #2f358e;
+}
+.mini-contact__form input[type="text"],
+.mini-contact__form input[type="email"],
+.mini-contact__form textarea {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.mini-contact__form textarea {
+  height: 100px;
+  resize: none;
+}
+.mini-contact__form input[type="submit"] {
+  background-color: #2f358e;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  float: right;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+.mini-contact__form__container {
+  padding: 1rem;
+}
+.mini-contact__form.open {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.mini-contact__header {
+  background-color: #2f358e;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+}
+.mini-contact__message {
+  line-height: 25px;
+  text-align: center;
+  padding: 0.5rem;
+}
+.mini-contact__close {
+  position: absolute;
+  left: -35px;
+  background-color: #58b84a;
+  color: #fff;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: block;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
 @media screen and (min-width: 640px) {
   body {

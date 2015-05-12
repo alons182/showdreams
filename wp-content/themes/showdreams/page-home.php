@@ -116,8 +116,9 @@
                     
                 
             </section>
-           
+             <?php get_sidebar('testimonials'); ?>
             
         </main>
-        
+        <?php get_sidebar('contact'); ?>
         <?php get_footer(); ?>
+        
