@@ -1274,9 +1274,9 @@ img {
 }
 .footer__social__link i {
   display: inline-block;
-  width: 40px;
-  height: 40px;
-  font-size: 1.3rem;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
   background-color: #000;
   color: #fff;
   -webkit-border-radius: 50%;
@@ -1315,6 +1315,7 @@ img {
   }
   .footer .fb-page {
     float: right;
+    margin-bottom: 1rem;
   }
   .footer__contact {
     float: left;
