@@ -1213,9 +1213,6 @@ img {
   padding-top: 2rem;
   text-align: center;
 }
-.footer .fb-page {
-  float: right;
-}
 .footer__contact {
   color: #fff;
   margin-bottom: 1rem;
@@ -1316,6 +1313,9 @@ img {
     overflow: hidden;
     text-align: left;
   }
+  .footer .fb-page {
+    float: right;
+  }
   .footer__contact {
     float: left;
     width: 256px;
@@ -1331,11 +1331,12 @@ img {
     display: block;
   }
   .footer__social {
-    float: right;
-    text-align: right;
-    margin-top: 2rem;
+    float: left;
+    text-align: left;
+    margin-top: -1rem;
   }
   .footer__social__item {
+    display: block;
     margin-bottom: 1rem;
     margin-right: 1rem;
   }

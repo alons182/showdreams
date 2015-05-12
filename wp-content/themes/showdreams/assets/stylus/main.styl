@@ -581,8 +581,7 @@ img
 	background-color #262626
 	padding-top 2rem
 	text-align center
-	.fb-page
-		float right
+	
 	&__contact
 		color white
 		margin-bottom 1rem
@@ -664,6 +663,8 @@ img
 	.footer
 		overflow hidden
 		text-align left
+		.fb-page
+			float right
 		&__contact
 			float left
 			width 256px
@@ -675,11 +676,12 @@ img
 		&__menu
 			display block
 		&__social
-			float right
-			text-align right
-			margin-top 2rem
+			float left
+			text-align left
+			margin-top -1rem
 			//width 400px
 			&__item
+				display block
 				margin-bottom 1rem
 				margin-right 1rem
 				&:last-child
