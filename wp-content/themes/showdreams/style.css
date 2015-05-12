@@ -900,7 +900,7 @@ img {
   color: #fff;
 }
 .main__featured__item__link:hover .main__featured__item__img:before {
-  color: #efe565;
+  color: #fef16e;
   position: absolute;
   -webkit-transform: scale(1.2, 1.2);
   -moz-transform: scale(1.2, 1.2);
@@ -942,6 +942,7 @@ img {
   text-transform: uppercase;
   font-size: 1rem;
   width: 140px;
+  font-weight: bold;
 }
 .main__services {
   text-align: center;
