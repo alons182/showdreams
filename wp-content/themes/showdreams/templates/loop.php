@@ -22,6 +22,10 @@
 		</div>
 	<?php endif; ?>
 
+
+
+	
+
 <?php endwhile; ?>
 <!-- post navigation -->
 <?php else: ?>

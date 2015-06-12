@@ -57,11 +57,13 @@ function showdreams_register_meta_boxes( $meta_boxes )
                 'id'    => $prefix . 'gallery',
                 'type'  => 'image',
                 'std'   => '',
-                'class' => 'custom-class',
+                'class' => 'custom-class'
                 
-            ),
+            )
+
         )
     );
+    
 
 
     return $meta_boxes;
