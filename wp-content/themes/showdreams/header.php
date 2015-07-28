@@ -20,8 +20,8 @@
                 <?php get_template_part( 'templates/nav' ); ?>
 	            <div class="top__social">
 	                <a href="https://www.facebook.com/pages/Show-Dreams/333030813484914?fref=ts" class="top__social__link" target="_blank"><i class="icon-facebook"></i></a>
-	                <a href="#" class="top__social__link"><i class="icon-twitter"></i></a>
-	                <a href="#" class="top__social__link"><i class="icon-google-plus"></i></a>
+	                <a href="#" class="top__social__link"><i class="icon-skype"></i></a>
+	                
 	            </div>
 	            <button id="btn-menu" class="top__btn-menu"><i class="icon-menu"></i></button>
             </div>

@@ -37,17 +37,17 @@
                              
                         </div>
                         <div class="footer__social__item">
-                            <a href="#" class="footer__social__link"><i class="icon-twitter"></i><span class="footer__social__info">Twitter</span></a>
+                            <a href="#" class="footer__social__link"><i class="icon-skype"></i><span class="footer__social__info">Skype</span></a>
                             
                         </div>
-                        <div class="footer__social__item">
+                        <!--<div class="footer__social__item">
                             <a href="#" class="footer__social__link"><i class="icon-google-plus"></i><span class="footer__social__info">Google Plus</span></a>
                             
                         </div>
                         <div class="footer__social__item">
                             <a href="#" class="footer__social__link"><i class="icon-youtube"></i><span class="footer__social__info">Youtube</span></a>
                             
-                        </div>
+                        </div>-->
                     </div>
                 </div>
                 

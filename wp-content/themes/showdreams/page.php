@@ -29,5 +29,10 @@
 	  	?>
 	  	
 	</main>
- <?php get_sidebar('contact'); ?>
+	<?php if ( $post->ID != 12 ) //contact
+  		{
+  			get_sidebar('contact'); 
+		}
+  	?>
+ 
 <?php get_footer(); ?>

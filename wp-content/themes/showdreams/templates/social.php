@@ -5,15 +5,15 @@
          
     </div>
     <div class="contact__social__item">
-        <a href="#" class="contact__social__link"><i class="icon-twitter"></i></a>
+        <a href="#" class="contact__social__link"><i class="icon-skype"></i></a>
         
     </div>
-    <div class="contact__social__item">
+    <!--<div class="contact__social__item">
         <a href="#" class="contact__social__link"><i class="icon-google-plus"></i></a>
         
     </div>
     <div class="contact__social__item">
         <a href="#" class="contact__social__link"><i class="icon-youtube"></i></a>
         
-    </div>
+    </div>-->
 </div>
