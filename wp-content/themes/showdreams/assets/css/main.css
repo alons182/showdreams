@@ -711,6 +711,22 @@ img {
 .top__social__link:hover {
   color: #2f358e;
 }
+.top__languages {
+  position: absolute;
+  right: 6rem;
+}
+.top__languages__link {
+  color: #fff;
+}
+.top__languages__container {
+  display: none;
+  background-color: #fff;
+  padding: 0.5rem;
+  position: absolute;
+  z-index: 9999;
+  width: 208px;
+  top: 36px;
+}
 @media screen and (min-width: 1024px) {
   .top {
     height: 36px;
@@ -923,16 +939,20 @@ img {
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.main__featured__item.decorative-lighting .main__featured__item__text {
+.main__featured__item.decorative-lighting .main__featured__item__text,
+.main__featured__item.iluminacion-decorativa .main__featured__item__text {
   left: 30px;
 }
-.main__featured__item.decorative-lighting .main__featured__item__img:before {
+.main__featured__item.decorative-lighting .main__featured__item__img:before,
+.main__featured__item.iluminacion-decorativa .main__featured__item__img:before {
   content: '\f0eb';
 }
-.main__featured__item.dj-music-services .main__featured__item__img:before {
+.main__featured__item.dj-music-services .main__featured__item__img:before,
+.main__featured__item.servicios-musicales-de-dj .main__featured__item__img:before {
   content: '\f025';
 }
-.main__featured__item.audiovisual-service .main__featured__item__img:before {
+.main__featured__item.audiovisual-service .main__featured__item__img:before,
+.main__featured__item.servicio-audiovisual .main__featured__item__img:before {
   content: '\f008';
   font-size: 4rem;
 }
@@ -1119,6 +1139,7 @@ img {
 .main .testimonials .testimony {
   padding-left: 1.2rem;
   padding-right: 1.2rem;
+  width: 100%;
 }
 .main .testimonials .testimony__info {
   font-style: italic;

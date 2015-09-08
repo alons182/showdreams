@@ -120,6 +120,20 @@ img
 			
 			&:hover
 				color azul
+	&__languages
+		position absolute
+		right 6rem
+		&__link
+			color white 
+		&__container
+			display none
+			background-color white
+			padding .5rem
+			position absolute
+			z-index 9999
+			width 208px
+			top 36px
+							
 				
 @media screen and (min-width: 1024px)
 	.top
@@ -308,16 +322,19 @@ img
 					transition all .5s ease
 					
 			&.decorative-lighting
+			&.iluminacion-decorativa
 				.main__featured__item__text
 					left 30px
 				.main__featured__item__img
 					&:before
 						content '\f0eb'
 			&.dj-music-services
+			&.servicios-musicales-de-dj	
 				.main__featured__item__img
 					&:before
 						content '\f025'
 			&.audiovisual-service
+			&.servicio-audiovisual	
 				.main__featured__item__img
 					&:before
 						content '\f008'
@@ -486,6 +503,7 @@ img
 		.testimony
 			padding-left 1.2rem
 			padding-right 1.2rem
+			width 100%
 			&__info
 				font-style italic
 			&__author

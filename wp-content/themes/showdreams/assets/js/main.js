@@ -22,6 +22,22 @@
       timeout: 200
 
        });
+      $('.top__languages').hoverIntent({
+      over: function() {
+            $('.top__languages__container').slideDown(200 );
+          },
+      out:  function() {
+            $('.top__languages__container').slideUp(200);
+          },
+      timeout: 200
+
+       });
+
+      /*.on('click', function(){
+
+         $('.top__languages__container').toggle();
+       
+      });*/
 
     //$(".chosen-select").chosen();
     

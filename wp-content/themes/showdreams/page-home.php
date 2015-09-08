@@ -12,9 +12,9 @@
                     <div class="main__banner__slide" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner.jpg');">
                         <div class="inner">
                             <div class="main__banner__slide__info">
-                                <h1><span>We take your event…</span>
-                                <span>to the next level !!</span></h1>
-                                <a href="<?php echo home_url( '/contact-us' ); ?>" class="btn"><span>Contact Us</span></a>
+                                <h1><span>Tomamos su evento...</span>
+                                <span>Al siguiente nivel !!</span></h1>
+                                <a href="<?php echo home_url( '/contact-us' ); ?>" class="btn"><span>Contáctenos</span></a>
                             </div>
                             
                         </div>
@@ -26,7 +26,7 @@
             
             <section class="main__featured">
                 <div class="inner">
-                        <h1 class="main__featured__title">Our main services</h1>
+                        <h1 class="main__featured__title">Nuestros servicios principales</h1>
                     
                         <?php
                             $args = array(
