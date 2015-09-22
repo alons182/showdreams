@@ -63,8 +63,8 @@
                 
             </section>
             <section class="main__services inner">
-                    <h1 class="main__services__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet</h1>
-                    <p class="main__services__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque facere dicta consectetur repellendus officia ducimus alias perspiciatis, reprehenderit doloribus tempora expedita fugiat ipsum deserunt magni itaque saepe sit ullam.</p>
+                    <h1 class="main__services__title">Lo muy lejano sólo es muy lejano, sino viajamos hasta allá</h1>
+                    <p class="main__services__description">Show Dreams es una empresa netamente costarricense con altos estándares en los servicios de animación y organización de eventos, contamos con más de 6 años de experiencia y con una filosofía de negocios equilibrada entre nuestra razón social y empresarial.</p>
                     <div class="main__services__container">
                        
                         <?php rewind_posts(); ?>
