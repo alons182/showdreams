@@ -1,5 +1,6 @@
 <section class="testimonials">
-    <h1 class="testimonials__title">Testimonios</h1>
+
+    <h1 class="testimonials__title"><?php  echo (get_locale() == "es_ES") ? "Testimonios" : "Testimonials" ?></h1>
     <div class="inner cycle-slideshow " data-cycle-fx="fade" data-cycle-timeout="9000" data-cycle-slides=".testimony">
         <article class="testimony">
             <div class="testimony__info"> You did a Great job!!! Pura Vida !!</div>

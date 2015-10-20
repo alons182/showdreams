@@ -22,12 +22,24 @@ function register_my_widgets(){
 			'name' => 'Sidebar Blog',
 			'description' => 'Sidebar Blog'
 			)
+  
 
 	 );
+  register_sidebar(
+    array(
+      'id' => 'sidebar-language',
+      'name' => 'Sidebar language',
+      'description' => 'Sidebar language'
+      )
+  
+
+   );
   
 }
 
 add_action('widgets_init', 'register_my_widgets');
+
+
 
 function site_favicon() {
     echo '<link rel="Shortcut Icon" type="image/x-icon" href="'.get_template_directory_uri().'/favicon.ico" />';

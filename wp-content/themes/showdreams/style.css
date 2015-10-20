@@ -714,6 +714,18 @@ img {
 .top__languages {
   position: absolute;
   right: 6rem;
+  text-align: center;
+}
+.top__languages li {
+  list-style: none;
+}
+.top__languages li a {
+  color: #58b84a;
+  display: block;
+}
+.top__languages li a:hover {
+  background-color: #58b84a;
+  color: #fff;
 }
 .top__languages__link {
   color: #fff;
@@ -724,7 +736,7 @@ img {
   padding: 0.5rem;
   position: absolute;
   z-index: 9999;
-  width: 208px;
+  width: 150px;
   top: 36px;
 }
 @media screen and (min-width: 1024px) {

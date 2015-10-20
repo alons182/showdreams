@@ -31,7 +31,7 @@
                     <div class="fb-page" data-href="https://www.facebook.com/pages/Show-Dreams/333030813484914" data-width="300" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/Show-Dreams/333030813484914"><a href="https://www.facebook.com/pages/Show-Dreams/333030813484914">Show Dreams</a></blockquote></div></div>
 
                     <div class="footer__social">
-                        <h4>Siguenos en:</h4>
+                        <h4><?php  echo (get_locale() == "es_ES") ? "Siguenos en:" : "Follow Us" ?></h4>
                         <div class="footer__social__item">
                              <a href="https://www.facebook.com/pages/Show-Dreams/333030813484914?fref=ts" class="footer__social__link" target="_blank"><i class="icon-facebook"></i><span class="footer__social__info">Facebook</span></a>
                              

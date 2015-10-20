@@ -12,9 +12,9 @@
                     <div class="main__banner__slide" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner.jpg');">
                         <div class="inner">
                             <div class="main__banner__slide__info">
-                                <h1><span>Tomamos su evento...</span>
-                                <span>Al siguiente nivel !!</span></h1>
-                                <a href="<?php echo home_url( '/contact-us' ); ?>" class="btn"><span>Contáctenos</span></a>
+                                <h1><span>We take your event...</span>
+                                <span>to the next level !!</span></h1>
+                                <a href="<?php echo home_url( '/contact-us' ); ?>" class="btn"><span><?php  echo (get_locale() == "es_ES") ? "Contáctenos" : "Contact Us" ?></span></a>
                             </div>
                             
                         </div>
@@ -26,7 +26,7 @@
             
             <section class="main__featured">
                 <div class="inner">
-                        <h1 class="main__featured__title">Nuestros servicios principales</h1>
+                        <h1 class="main__featured__title"><?php  echo (get_locale() == "es_ES") ? "Nuestros servicios principales" : "Our Main Services" ?></h1>
                     
                         <?php
                             $args = array(
@@ -63,8 +63,17 @@
                 
             </section>
             <section class="main__services inner">
-                    <h1 class="main__services__title">Lo muy lejano sólo es muy lejano, sino viajamos hasta allá</h1>
-                    <p class="main__services__description">Show Dreams es una empresa netamente costarricense con altos estándares en los servicios de animación y organización de eventos, contamos con más de 6 años de experiencia y con una filosofía de negocios equilibrada entre nuestra razón social y empresarial.</p>
+                    
+                    <?php rewind_posts(); ?>
+                      <?php query_posts( 'post_type=page&page_id=2' ); ?>
+                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+                                <?php the_content(); ?>
+                
+                            <?php endwhile; ?>
+                            <!-- post navigation -->
+                          
+                        <?php endif; ?>
                     <div class="main__services__container">
                        
                         <?php rewind_posts(); ?>

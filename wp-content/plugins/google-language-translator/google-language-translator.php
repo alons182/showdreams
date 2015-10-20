@@ -2,7 +2,7 @@
 /*
 Plugin Name: Google Language Translator
 Plugin URI: http://www.studio88design.com/plugins/google-language-translator
-Version: 5.0.0
+Version: 5.0.04
 Description: The MOST SIMPLE Google Translator plugin.  This plugin adds Google Translator to your website by using a single shortcode, [google-translator]. Settings include: layout style, hide/show specific languages, hide/show Google toolbar, and hide/show Google branding. Add the shortcode to pages, posts, and widgets.
 Author: Rob Myrick
 Author URI: http://www.wp-studio.net/
@@ -25,6 +25,7 @@ class google_language_translator {
     'bg' => 'Bulgarian',
     'ca' => 'Catalan',
     'ceb' => 'Cebuano',
+    'ny' => 'Chichewa',
     'zh-CN' => 'Chinese',
     'zh-TW' => 'Chinese(Traditional)',
     'hr' => 'Croatian',
@@ -56,6 +57,7 @@ class google_language_translator {
     'ja' => 'Japanese',
     'jw' => 'Javanese',
     'kn' => 'Kannada',
+    'kk' => 'Kazakh',
     'km' => 'Khmer',
     'ko' => 'Korean',
     'lo' => 'Lao',
@@ -63,11 +65,14 @@ class google_language_translator {
     'lv' => 'Latvian',
     'lt' => 'Lithuanian',
     'mk' => 'Macedonian',
+    'mg' => 'Malagasy',
     'ms' => 'Malay',
+    'ml' => 'Malayalam',
     'mt' => 'Maltese',
     'mi' => 'Maori',
     'mr' => 'Marathi',
     'mn' => 'Mongolian',
+    'my' => 'Myanmar(Burmese)',
     'ne' => 'Nepali',
     'no' => 'Norwegian',
     'fa' => 'Persian',
@@ -77,18 +82,23 @@ class google_language_translator {
     'ro' => 'Romanian',
     'ru' => 'Russian',
     'sr' => 'Serbian',
+    'st' => 'Sesotho',
+    'si' => 'Sinhala',
     'sk' => 'Slovak',
     'sl' => 'Slovenian',
     'so' => 'Somali',
     'es' => 'Spanish',
+    'su' => 'Sundanese',
     'sw' => 'Swahili',
     'sv' => 'Swedish',
+    'tg' => 'Tajik',
     'ta' => 'Tamil',
     'te' => 'Telugu',
     'th' => 'Thai',
     'tr' => 'Turkish',
     'uk' => 'Ukranian',
     'ur' => 'Urdu',
+    'uz' => 'Uzbek',
     'vi' => 'Vietnamese',
     'cy' => 'Welsh',
     'yi' => 'Yiddish',
@@ -190,8 +200,10 @@ class google_language_translator {
     wp_enqueue_script( 'jquery-ui-core');
     wp_enqueue_script( 'jquery-ui-sortable');
     wp_enqueue_script( 'load_sortable_flags', plugins_url('js/load-sortable-flags.js',__FILE__), array('jquery'));
+    wp_register_style( 'jquery-ui.css', plugins_url('css/jquery-ui.css',__FILE__) );
     wp_register_style( 'style.css', plugins_url('css/style.css', __FILE__) );
     wp_enqueue_style( 'style.css' );
+    //wp_enqueue_style( 'jquery-ui.css' );
   }
   
   public function flags() {
@@ -572,12 +584,12 @@ class google_language_translator {
 		$language_codes = $language_code_array;
 		$item_count = count($items); 
 
-		if ($item_count == 1 || $item_count == 22 || $item_count == 43 || $item_count == 64) { ?>
+		if ($item_count == 1 || $item_count == 24 || $item_count == 47 || $item_count == 70) { ?>
           <div class="languages" style="width:25%; float:left">
 	    <?php } ?>
 		  <div><input type="checkbox" name="language_display_settings[<?php echo $language_code; ?>]" value="1"<?php checked( 1,$get_language_choices[''.$language_code.'']); ?>/><?php echo $language_name; ?></div>
         <?php 
-		if ($item_count == 21 || $item_count == 42 || $item_count == 63 || $item_count == 81) { ?>
+		if ($item_count == 23 || $item_count == 46 || $item_count == 69 || $item_count == 91) { ?>
           </div>
         <?php } 
 	  } ?>
@@ -628,12 +640,12 @@ class google_language_translator {
 		$language_codes = $language_code_array;
 		$item_count = count($items); 
 
-		if ($item_count == 1 || $item_count == 22 || $item_count == 43 || $item_count == 64) { ?>
+		if ($item_count == 1 || $item_count == 24 || $item_count == 47 || $item_count == 70) { ?>
           <div class="flagdisplay" style="width:25%; float:left">
 	    <?php } ?>
 		  <div><input type="checkbox" name="flag_display_settings[flag-<?php echo $language_code; ?>]" value="1"<?php checked( 1,$get_flag_choices['flag-'.$language_code.'']); ?>/><?php echo $language_name; ?></div>
         <?php 
-		if ($item_count == 21 || $item_count == 42 || $item_count == 63 || $item_count == 81) { ?>
+		if ($item_count == 23 || $item_count == 46 || $item_count == 69 || $item_count == 91) { ?>
           </div>
         <?php } 
 	  } ?>
@@ -925,7 +937,7 @@ class google_language_translator {
 					  </tr>
 					  
 					  <tr class="notranslate">
-				        <td class="choose_flags_intro">Show flag images?<br/>(Display up to 81 flags above the translator)</td>
+				        <td class="choose_flags_intro">Show flag images?<br/>(Display up to 91 flags above the translator)</td>
 						<td class="choose_flags_intro"><?php $this->googlelanguagetranslator_flags_cb(); ?></td>
 					  </tr>
 					  

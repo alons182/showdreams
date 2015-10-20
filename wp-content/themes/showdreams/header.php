@@ -26,7 +26,7 @@
                 <div class="top__languages">
                     <a href="#" class="top__languages__link">Cambiar idioma</a>
                     <div class="top__languages__container">
-                        <?php echo do_shortcode('[google-translator]'); ?>
+                        <?php get_sidebar('language'); ?>
                     </div>
                 </div>
                
