@@ -840,7 +840,7 @@ img {
 .main__banner__slide__info h1 span:first-child {
   margin-top: 0;
 }
-.main__banner__slide__info a {
+.main__banner__slide a {
   background-color: #fff;
   padding: 0.3rem;
   font-size: 1.5rem;
@@ -848,16 +848,16 @@ img {
   color: #58b84a;
   display: block;
 }
-.main__banner__slide__info a span {
+.main__banner__slide a span {
   padding: 0.5rem;
   border: 4px solid #58b84a;
   display: block;
 }
-.main__banner__slide__info a:hover {
+.main__banner__slide a:hover {
   background-color: #58b84a;
   color: #fff;
 /*span
-							border-color white*/
+						border-color white*/
 }
 .main__page-banner {
   height: 450px;
@@ -1010,6 +1010,7 @@ img {
   height: 330px;
   margin-bottom: 1rem;
   border: 1px solid rgba(88,184,74,0.35);
+  vertical-align: top;
 }
 .main__services__item__figure {
   overflow: hidden;
@@ -1405,26 +1406,6 @@ img {
   }
   .main__featured__item__text {
     font-size: 1.5rem;
-  }
-  .main__services__container {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: box;
-    display: flex;
-    -webkit-box-lines: multiple;
-    -moz-box-lines: multiple;
-    -o-box-lines: multiple;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -moz-box-pack: justify;
-    -o-box-pack: justify;
-    -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
   }
   .main__content {
     text-align: left;
