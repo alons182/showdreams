@@ -1386,8 +1386,12 @@ img {
   .top__menu {
     display: block !important;
   }
+  .header {
+    padding-top: 8rem;
+  }
   .main__banner__slide {
     height: 750px;
+    padding-top: 20rem;
   }
   .main__banner__slide__info h1 {
     margin-bottom: 4rem;
