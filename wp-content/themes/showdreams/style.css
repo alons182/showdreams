@@ -820,9 +820,10 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   height: 450px;
+  padding-top: 13rem;
 }
 .main__banner__slide__info {
-  padding-top: 12rem;
+  padding-top: 1rem;
   position: relative;
 }
 .main__banner__slide__info h1 {
@@ -1387,9 +1388,6 @@ img {
   }
   .main__banner__slide {
     height: 750px;
-  }
-  .main__banner__slide__info {
-    padding-top: 16rem;
   }
   .main__banner__slide__info h1 {
     margin-bottom: 4rem;
