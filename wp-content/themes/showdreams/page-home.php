@@ -61,7 +61,41 @@
                 
             </section>
             <section class="main__services inner">
-                    
+                    <div class="inner cycle-slideshow " data-cycle-fx="fade" data-cycle-timeout="5000" data-cycle-slides=".main__banner__slide__info">
+                            <div class="main__banner__slide__info">
+                                <?php if(get_locale() == "es_ES") : ?>
+                                    <h1><span>Si lo puedes soñar...</span>
+                                    <span>Nosotros lo hacemos realidad!</span></h1>
+                                <?php else : ?>
+                                    <h1><span>If you can dream it...</span>
+                                    <span>we make it reality!!</span></h1>
+
+                                <?php endif; ?>
+                            </div>
+                            <div class="main__banner__slide__info">
+                                 <?php if(get_locale() == "es_ES") : ?>
+                                    <h1><span>Nuestro Servicio de DJ...</span>
+                                    <span>Simplemente inolvidable!</span></h1>
+                                <?php else : ?>
+                                    <h1><span>Our Dj Services...</span>
+                                    <span>Simply unforgetable!!</span></h1>
+                                <?php endif; ?>
+                            </div>
+                            <div class="main__banner__slide__info">
+                            <?php if(get_locale() == "es_ES") : ?>
+                                    <h1><span>Llevamos su evento...</span>
+                                    <span>al siguiente nivel!</span></h1>
+                                <?php else : ?>
+                                    <h1><span>We take your event...</span>
+                                    <span>to the next level !!</span></h1>
+                                  <?php endif; ?>
+                                
+                            </div>
+                             
+
+                           
+                            
+                        </div>
                     <?php rewind_posts(); ?>
                       <?php query_posts( 'post_type=page&page_id=2' ); ?>
                         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -121,41 +155,7 @@
                         
                     </div>
                     
-                     <div class="inner cycle-slideshow " data-cycle-fx="fade" data-cycle-timeout="5000" data-cycle-slides=".main__banner__slide__info">
-                            <div class="main__banner__slide__info">
-                                <?php if(get_locale() == "es_ES") : ?>
-                                    <h1><span>Si lo puedes soñar...</span>
-                                    <span>Nosotros lo hacemos realidad!</span></h1>
-                                <?php else : ?>
-                                    <h1><span>If you can dream it...</span>
-                                    <span>we make it reality!!</span></h1>
-
-                                <?php endif; ?>
-                            </div>
-                            <div class="main__banner__slide__info">
-                                 <?php if(get_locale() == "es_ES") : ?>
-                                    <h1><span>Nuestro Servicio de DJ...</span>
-                                    <span>Simplemente inolvidable!</span></h1>
-                                <?php else : ?>
-                                    <h1><span>Our Dj Services...</span>
-                                    <span>Simply unforgetable!!</span></h1>
-                                <?php endif; ?>
-                            </div>
-                            <div class="main__banner__slide__info">
-                            <?php if(get_locale() == "es_ES") : ?>
-                                    <h1><span>Llevamos su evento...</span>
-                                    <span>al siguiente nivel!</span></h1>
-                                <?php else : ?>
-                                    <h1><span>We take your event...</span>
-                                    <span>to the next level !!</span></h1>
-                                  <?php endif; ?>
-                                
-                            </div>
-                             
-
-                           
-                            
-                        </div>
+                     
                 
             </section>
              <?php get_sidebar('testimonials'); ?>
