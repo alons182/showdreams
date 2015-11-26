@@ -1386,46 +1386,43 @@ img {
   .top__menu {
     display: block !important;
   }
-  .header {
-    padding-top: 8rem;
-  }
-  .main__banner__slide {
-    height: 750px;
-    padding-top: 30rem;
-  }
-  .main__banner__slide__info h1 {
-    margin-bottom: 4rem;
-  }
-  .main__banner__slide__info h1 span {
-    margin-bottom: 1rem;
-  }
-  .main__featured__title {
-    margin-bottom: 100px;
-    font-size: 3rem;
-  }
-  .main__featured__item {
-    margin-right: 5rem;
-  }
-  .main__featured__item__text {
-    font-size: 1.5rem;
-  }
-  .main__content {
-    text-align: left;
-  }
-  .main__content .contact-info {
-    position: absolute;
-    right: 3rem;
-    top: 5rem;
-  }
-  .main__content .contact__social,
-  .main__content .share {
-    position: absolute;
-    bottom: 12rem;
-    right: 8.5rem;
-  }
-  .mini-contact {
-    display: block;
-  }
+}
+.main__banner__slide {
+  height: 750px;
+  padding-top: 30rem;
+}
+.main__banner__slide__info h1 {
+  margin-bottom: 4rem;
+}
+.main__banner__slide__info h1 span {
+  margin-bottom: 1rem;
+}
+.main__featured__title {
+  margin-bottom: 100px;
+  font-size: 3rem;
+}
+.main__featured__item {
+  margin-right: 5rem;
+}
+.main__featured__item__text {
+  font-size: 1.5rem;
+}
+.main__content {
+  text-align: left;
+}
+.main__content .contact-info {
+  position: absolute;
+  right: 3rem;
+  top: 5rem;
+}
+.main__content .contact__social,
+.main__content .share {
+  position: absolute;
+  bottom: 12rem;
+  right: 8.5rem;
+}
+.mini-contact {
+  display: block;
 }
 .footer {
   background-color: #262626;
