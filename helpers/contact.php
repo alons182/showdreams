@@ -14,10 +14,10 @@ if(trim($_POST['mini-comments']) === '') {
 }
 
 if($result=='ok'){
-    $emailTo = 'alonso@avotz.com';
+    $emailTo = 'epalma@showdreamscr.com';
     $subject = 'showdreamscr.com - Submitted message from '.$email;
     $body = "Email: $email \n\nComments: $comments";
-    $headers = 'From: ' .' <alonso@avotz.com>' . "\r\n" . 'Reply-To: ' . $email;
+    $headers = 'From: ' .' <info@showdreamscr.com>' . "\r\n" . 'Reply-To: ' . $email;
 
     mail($emailTo, $subject, $body, $headers);
 
