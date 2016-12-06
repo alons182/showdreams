@@ -17,7 +17,7 @@ get_header(); ?>
                 
 
                             <a href="<?php echo home_url( '/contact-us' ); ?>" class="btn"><span><?php  echo (get_locale() == "es_ES") ? "Contáctenos" : "Contact Us" ?></span></a>
-                            ff
+                           404
                         </div>
                     </div>
             </div>
