@@ -5,13 +5,13 @@
      
 
 
-
       btnMenu.on('click', function(){
 
           menu.toggle();
           $(this).toggleClass('top__btn-menu--active');
 
       });
+
       menu.find(".menu-item-has-children").hoverIntent({
       over: function() {
             $(this).find(">.sub-menu").slideDown(200 );
@@ -22,6 +22,7 @@
       timeout: 200
 
        });
+
       $('.top__languages').hoverIntent({
       over: function() {
             $('.top__languages__container').slideDown(200 );
@@ -33,13 +34,7 @@
 
        });
 
-      /*.on('click', function(){
-
-         $('.top__languages__container').toggle();
-       
-      });*/
-
-    //$(".chosen-select").chosen();
+   
     
     //SCROLL WINDOW FUNCTIONALITY
 
@@ -51,6 +46,16 @@
           }
       });
 
+
+ $(".owl-carousel").owlCarousel({
+          items : 1,
+          autoplay : true,
+          loop : true,
+          nav : true,
+          navText : ['',''],
+          //autoplayTimeout : 6000
+        
+     });
 
     //GALLERY OF CARROUSEL
 

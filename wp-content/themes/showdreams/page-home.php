@@ -7,9 +7,9 @@
   
         
         <main class="main">
-            <div class="main__banner">
-                               
-                    <div class="main__banner__slide" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner.jpg');">
+            <div class="main__banner ">
+                 <div class="owl-carousel">
+                     <div class="main__banner__slide" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner.jpg');">
                         <div class="inner ">
                 
 
@@ -17,9 +17,40 @@
                             
                         </div>
                     </div>
-                    
-
+                    <div class="main__banner__slide" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner2.jpg');">
+                        <div class="inner ">
                 
+
+                            <a href="<?php echo home_url( '/contact-us' ); ?>" class="btn"><span><?php  echo (get_locale() == "es_ES") ? "Contáctenos" : "Contact Us" ?></span></a>
+                            
+                        </div>
+                    </div>
+                    <div class="main__banner__slide" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner3.jpg');">
+                        <div class="inner ">
+                
+
+                            <a href="<?php echo home_url( '/contact-us' ); ?>" class="btn"><span><?php  echo (get_locale() == "es_ES") ? "Contáctenos" : "Contact Us" ?></span></a>
+                            
+                        </div>
+                    </div>
+                    <div class="main__banner__slide" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner4.jpg');">
+                        <div class="inner ">
+                
+
+                            <a href="<?php echo home_url( '/contact-us' ); ?>" class="btn"><span><?php  echo (get_locale() == "es_ES") ? "Contáctenos" : "Contact Us" ?></span></a>
+                            
+                        </div>
+                    </div>
+                    <div class="main__banner__slide" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner5.jpg');">
+                        <div class="inner ">
+                
+
+                            <a href="<?php echo home_url( '/contact-us' ); ?>" class="btn"><span><?php  echo (get_locale() == "es_ES") ? "Contáctenos" : "Contact Us" ?></span></a>
+                            
+                        </div>
+                    </div>
+                 </div>          
+ 
             </div>
             
             <section class="main__featured">

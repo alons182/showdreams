@@ -1,7 +1,7 @@
 var gulp        = require('gulp'),
     uglify      = require('gulp-uglify'),
     stripDebug  = require('gulp-strip-debug'),
-    minifyCSS   = require('gulp-minify-css'),
+    minifyCSS   = require('gulp-clean-css'),
     stylus      = require('gulp-stylus'),
     nib         = require('nib'),
     concat      = require('gulp-concat'),
@@ -27,6 +27,7 @@ gulp.task('js', function () {
       /*'./assets/js/vendor/jquery-1.11.2.min.js',*/
       './assets/js/vendor/jquery.hoverIntent.minified.js',
       /*'./assets/js/vendor/jquery.magnific-popup.min.js',*/
+      './assets/js/vendor/owl.carousel.js',
       './assets/js/vendor/jquery.cycle2.min.js',
       './assets/js/vendor/jquery.carouFredSel-6.2.0-packed.js',
       './assets/js/vendor/chosen.jquery.min.js',
@@ -53,7 +54,7 @@ gulp.task('stylus', function () {
 });
 
 gulp.task('css', function () {
-  gulp.src(['./assets/css/main.css','./assets/css/magnific-popup.css','./assets/css/chosen.css','./assets/css/animate.css'])
+  gulp.src(['./assets/css/main.css','./assets/css/magnific-popup.css','./assets/css/chosen.css','./assets/css/animate.css','./assets/css/owl.carousel.css'])
     //.pipe(minifyCSS({ keepSpecialComments: '*', keepBreaks: '*'}))
     .pipe(concat('style.css'))
     .pipe(gulp.dest('./'))
