@@ -10,7 +10,20 @@
 get_header(); ?>
 		
 		<main class="main">
-	  	
+	  		<div class="main__banner">
+                               
+                    <div class="main__banner__slide" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner.jpg');">
+                        <div class="inner ">
+                
+
+                            <a href="<?php echo home_url( '/contact-us' ); ?>" class="btn"><span><?php  echo (get_locale() == "es_ES") ? "Contáctenos" : "Contact Us" ?></span></a>
+                            
+                        </div>
+                    </div>
+                    
+
+                
+            </div>
 		  	<section class="main__content">
 		  		<div class="inner">
 			
