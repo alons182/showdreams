@@ -20,9 +20,6 @@ get_header(); ?>
                             
                         </div>
                     </div>
-                    
-
-                
             </div>
 		  	<section class="main__content">
 		  		<div class="inner">
