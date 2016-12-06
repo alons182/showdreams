@@ -81,6 +81,10 @@ function showdreams_register_meta_boxes( $meta_boxes )
     return $meta_boxes;
 }
 
+function jeherve_custom_tiled_gallery_width() {
+    return '896';
+}
+add_filter( 'tiled_gallery_content_width', 'jeherve_custom_tiled_gallery_width' );
 //excerprt for pages
 
 add_action( 'init', 'my_add_excerpts_to_pages' );
