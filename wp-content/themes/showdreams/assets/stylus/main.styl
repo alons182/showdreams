@@ -35,6 +35,7 @@ ul
 a
 	text-decoration none
 
+
 h1
 h2
 h3
@@ -50,6 +51,22 @@ h1
 img
 	max-width 100%
 	height auto
+input[type="text"]
+input[type="email"]
+	height 30px
+	
+input[type="submit"]
+	background-color white
+	padding .3rem
+	font-size 1.5rem
+	text-transform uppercase
+	color verde
+	display inline-block
+	border 2px solid verde
+	&:hover
+		background-color verde 
+		color white
+		
 .alignright
 	float right 
 	margin-left 15px
@@ -297,6 +314,7 @@ img
 			color white
 			margin-bottom 90px
 			font-size 2rem
+			
 			&:after
 				content ''
 				position absolute
@@ -900,7 +918,78 @@ img
 				
 			&__info
 				display inline-block
+
+.blog
+.search
+.single 
+	.inner
+		overflow hidden
+	.main__content
+		a 
+			color verde
+			&:hover
+				text-decoration underline
+	
+.blog-content
+	width 100%
+
+.widgets
+	width 100%
+	//background-color verde
+	> li 
+		list-style none
+.widget
+	margin-bottom 2rem
+	h2
+		position relative
+		text-transform uppercase
+		//text-align center
+		margin-bottom 40px
+		font-size 2rem
+		&:after
+			content ''
+			position absolute
+			border-top 1px dotted verde
+			border-bottom 1px dotted verde
+			bottom -30px
+			left 0
+			right 0
+			height 3px 
+			//width 95px
+			color verde
+			margin 0 auto
+			text-align center
+	li 
+		margin-left 45px
 		
+		a
+			color verde
+.widget_search
+	.screen-reader-text
+		display none
+	input[type="text"]
+		height 30px
+		width 100%
+	#searchsubmit
+		display none
+
+.post-published-data
+	text-align center
+	.post-data 
+		color verde
+
+.more-link
+	color verde
+
+@media screen and (min-width: 1024px)
+	.blog-content
+		width 65%
+		float left
+	
+	.widgets
+		width 30%
+		float right
+	
 			
 			
 		
