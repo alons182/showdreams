@@ -631,8 +631,13 @@ img {
   height: auto;
 }
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+textarea {
   height: 30px;
+  width: 100%;
+}
+textarea {
+  height: 90px;
 }
 input[type="submit"] {
   background-color: #fff;
