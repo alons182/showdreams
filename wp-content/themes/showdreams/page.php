@@ -29,7 +29,7 @@
 	  	?>
 	  	
 	</main>
-	<?php if ( $post->ID != 12 ) //contact
+	<?php if ( $post->ID != 12 || $post->ID != 320) //contact
   		{
   			get_sidebar('contact'); 
 		}
