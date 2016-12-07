@@ -18,6 +18,10 @@
 	  			 <div id="primary" class="blog-content">
 
                      <?php get_template_part( 'templates/post' ); ?>
+                     <div class="posts-related">
+						
+						<?php if( function_exists('zemanta_related_posts')) zemanta_related_posts()/*wp_related_posts()*/?>
+					</div>
 					<?php
 							// If comments are open or we have at least one comment, load up the comment template.
 							if ( comments_open() || get_comments_number() ) :

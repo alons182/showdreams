@@ -1610,7 +1610,7 @@ input[type="submit"]:hover {
   position: relative;
   text-transform: uppercase;
   margin-bottom: 40px;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 .widget h2:after {
   content: '';
@@ -1649,6 +1649,9 @@ input[type="submit"]:hover {
 }
 .more-link {
   color: #58b84a;
+}
+.comment-form label {
+  display: block;
 }
 @media screen and (min-width: 1024px) {
   .blog-content {
