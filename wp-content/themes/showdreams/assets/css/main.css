@@ -1579,9 +1579,9 @@ input[type="submit"]:hover {
     display: inline-block;
   }
 }
-.blog .inner,
-.search .inner,
-.single .inner {
+.blog .main__content .inner,
+.search .main__content .inner,
+.single .main__content .inner {
   overflow: hidden;
 }
 .blog .main__content a,
