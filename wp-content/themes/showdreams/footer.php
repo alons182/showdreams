@@ -3,6 +3,11 @@
                 <div class="footer__contact">
                     <a href="<?php echo home_url( '/' ); ?>" class="footer__logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-white.png" alt="Show Dreams" class="footer__logo__img" /></a>
                     <div class="footer__contact__item footer__contact__item--tel">
+                         (506) 2665-5216  <br/>
+                       
+                    </div>
+
+                    <div class="footer__contact__item footer__contact__item--tel">
                          (506) 8824-37-03  <br/>
                        
                     </div>
