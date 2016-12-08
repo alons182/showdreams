@@ -15,8 +15,11 @@
 	  	<section class="main__content">
 	  		<div class="inner">
 
+	  			 <?php if ( is_singular( array( 'services' ) ) ) {
+				    get_template_part( 'templates/loop' ); 
+				} else {?>
 	  			 <div id="primary" class="blog-content">
-
+					 
                      <?php get_template_part( 'templates/post' ); ?>
                      <div class="posts-related">
 						
@@ -29,7 +32,11 @@
 							endif;
 						?>
                 </div>
-                <?php get_sidebar(); ?>
+                <?php 
+                 get_sidebar(); 
+
+                  }
+                 ?>
 		
 				
 			</div>
