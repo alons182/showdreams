@@ -8,11 +8,11 @@
                     </div>
 
                     <div class="footer__contact__item footer__contact__item--tel">
-                         (506) 8824-37-03  <br/>
+                         (506) 8824-3703  <br/>
                        
                     </div>
                     <div class="footer__contact__item footer__contact__item--tel">
-                        (506) 8480-68-65 <br/>
+                        (506) 8480-6865 <br/>
                         
                     </div>
                     <div class="footer__contact__item footer__contact__item--mail">
