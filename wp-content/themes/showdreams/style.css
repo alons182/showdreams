@@ -825,6 +825,13 @@ input[type="submit"]:hover {
   padding: 0.5rem;
   border-radius: 10px;
   background-color: rgba(255,255,255,0.9);
+  margin-bottom: 2rem;
+}
+.header__logo__small {
+  float: left;
+  width: 34px;
+  height: 34px;
+  margin-top: 3px;
 }
 .main__banner {
   position: relative;

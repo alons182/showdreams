@@ -13,7 +13,7 @@
                         <div class="inner ">
                 
 
-                            <a href="<?php echo home_url( '/contact-us' ); ?>" class="btn"><span><?php  echo (get_locale() == "es_ES") ? "Contáctenos" : "Contact Us" ?></span></a>
+                           
                             
                         </div>
                     </div>
@@ -21,7 +21,7 @@
                         <div class="inner ">
                 
 
-                            <a href="<?php echo home_url( '/contact-us' ); ?>" class="btn"><span><?php  echo (get_locale() == "es_ES") ? "Contáctenos" : "Contact Us" ?></span></a>
+                          
                             
                         </div>
                     </div>
@@ -29,23 +29,21 @@
                         <div class="inner ">
                 
 
-                            <a href="<?php echo home_url( '/contact-us' ); ?>" class="btn"><span><?php  echo (get_locale() == "es_ES") ? "Contáctenos" : "Contact Us" ?></span></a>
-                            
+                          
                         </div>
                     </div>
                     <div class="main__banner__slide" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner4.jpg');">
                         <div class="inner ">
                 
 
-                            <a href="<?php echo home_url( '/contact-us' ); ?>" class="btn"><span><?php  echo (get_locale() == "es_ES") ? "Contáctenos" : "Contact Us" ?></span></a>
-                            
+                          
                         </div>
                     </div>
                     <div class="main__banner__slide" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner5.jpg');">
                         <div class="inner ">
                 
 
-                            <a href="<?php echo home_url( '/contact-us' ); ?>" class="btn"><span><?php  echo (get_locale() == "es_ES") ? "Contáctenos" : "Contact Us" ?></span></a>
+                           
                             
                         </div>
                     </div>
@@ -55,6 +53,7 @@
             
             <section class="main__featured">
                 <div class="inner">
+                        <a href="<?php echo home_url( '/' ); ?>" class="header__logo"><img src="<?php echo get_template_directory_uri();  ?>/img/logo.png" alt="Show Dreams" class="header__logo__img" /></a>
                         <h1 class="main__featured__title"><?php  echo (get_locale() == "es_ES") ? "Nuestros servicios principales" : "Our Main Services" ?></h1>
                     
                         <?php
@@ -127,7 +126,7 @@
                            
                             
                         </div>
-                    <?php rewind_posts(); ?>
+                      <?php rewind_posts(); ?>
                       <?php query_posts( 'post_type=page&page_id=2' ); ?>
                         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -139,7 +138,7 @@
                         <?php endif; ?>
                     <div class="main__services__container">
                        
-                        <?php rewind_posts(); ?>
+                        <?php /*rewind_posts(); ?>
                         <?php query_posts( 'post_type=page&posts_per_page=3&page_id=63' ); ?>
                         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             
@@ -182,7 +181,7 @@
                             <?php endwhile; ?>
                             <!-- post navigation -->
                           
-                        <?php endif; ?>
+                        <?php endif; */?>
                         
                     </div>
                     

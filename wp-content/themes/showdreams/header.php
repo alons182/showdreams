@@ -17,6 +17,7 @@
     <body <?php body_class(); ?>>    
         <div class="top">
             <div class="inner">
+                 <a href="<?php echo home_url( '/' ); ?>" class="header__logo__small"><img src="<?php echo get_template_directory_uri();  ?>/img/logo-small.png" alt="Show Dreams" class="header__logo__img" /></a>
                 <?php get_template_part( 'templates/nav' ); ?>
 	            <div class="top__social">
 	                <a href="https://www.facebook.com/pages/Show-Dreams/333030813484914?fref=ts" class="top__social__link" target="_blank"><i class="icon-facebook"></i></a>
@@ -35,7 +36,7 @@
         </div>
         <header class="header">
             <div class="inner">
-                <a href="<?php echo home_url( '/' ); ?>" class="header__logo"><img src="<?php echo get_template_directory_uri();  ?>/img/logo.png" alt="Show Dreams" class="header__logo__img" /></a>
+               
                 
                 
             </div>
